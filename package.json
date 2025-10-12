@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@floating-ui/dom": "^1.7.4",
+    "@material-tailwind/react": "^2.1.10",
     "@preline/dropdown": "^3.2.3",
     "@tailwindcss/vite": "^4.1.13",
     "daisyui": "^5.1.13",

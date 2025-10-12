@@ -16,11 +16,100 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Style Wallpaper */
+
 .wallspaper {
   background-image: url('./assets/fondos/WallspaperSympliaFact.jpg');
 }
 
+/* Style Input */
 
+.custom_input {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.input {
+	width: 100%;
+	font-size: 14px;
+	font-style: normal;
+	padding: 8px 17px;
+	padding-right: 15px;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #6EDFEB;
+	border-radius: 20px;
+	box-shadow: 0px 1px 2px 0px #E2E2E2;
+	transition: .3s ease;
+}
+
+.input:focus {
+	background: #F6F6F6;
+	border: 1px solid #5A7EC7;
+	border-radius: 10px;
+}
+
+.input::placeholder {
+	color: #CFCFE5;
+}
+
+.svg_icon {
+	position: absolute;
+	right: 35px;
+	fill: #999c9e;
+	width: 18px;
+	height: 18px;
+}
+
+/* Style Button */
+
+.custom_button {
+  font-family: helvetica;
+  color: #FFFFFF !important;
+  font-size: 14px;
+  text-shadow: 0px 0px 0px #DADDDE;
+  box-shadow: 1px 1px 1px #F9F2FF;
+  padding: 8px;
+  border-radius: 40px;
+  border: 1px solid #3866A3;
+  background: #1491DB
+}
+.custom_button:hover {
+  color: #EBF5FF !important;
+  background: #1C73D6;
+}
+
+/* Style checkbox */
+
+.tooltip-container {
+     position: relative;
+     display: inline-block;
+   }
+   .tooltip-text {
+     visibility: hidden;
+     width: 65px;
+	 height: 35px;
+	 
+     background-color: #262727;
+     color: #fff;
+     text-align: center;
+     border-radius: 17px;
+     padding: 5px;
+     position: absolute;
+     z-index: 1;
+     bottom: -2vh; /* Posiciona el tooltip encima del elemento */
+     left: 80px;
+     transform: translateX(-50%);
+     opacity: 0;
+     transition: opacity 0.5s;
+   }
+
+   .tooltip-container:hover .tooltip-text {
+     visibility: visible;
+     opacity: 1;
+   }
 
 
 
