@@ -1,13 +1,16 @@
-import FormRegisterUser from '../components/FormRegisterUser'
 import { BackButton } from '../components/Buttons/BackButton';
+import FormRegisterUser from '../components/FormRegisterUser'
+
 
 
 const RegisterClient = () => {
   return (
+    <>
     <div>
        <BackButton />
        <FormRegisterUser />
     </div>
+    </>
   );
 };
 
