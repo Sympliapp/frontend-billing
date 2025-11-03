@@ -12,7 +12,8 @@ return (
       <IoIosArrowBack size={45} 
         color='teal'
         className='
-        absolute  
+        absolute
+        mt-3  
         cursor-pointer
         '/>
     </div>

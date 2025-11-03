@@ -1,4 +1,5 @@
 import React from 'react'
+import { ModalScreen } from './Modals/ModalScreen'
 
 export const CheckBoxTermins = () => {
   return (
@@ -6,7 +7,7 @@ export const CheckBoxTermins = () => {
     <div className="flex items-start mb-5">
       <div className="flex items-center h-5 ">
         <input id="terms" type="checkbox" value="terms" 
-        className="flex w-5 h-5
+        className="flex w-4 h-4
         border  
         rounded-lg 
         focus:ring-2 
@@ -19,12 +20,12 @@ export const CheckBoxTermins = () => {
       font-small
       dark:text-gray-500">
         Aceptar 
-        <a href="#" 
+        <p  
         className="text-sky-300 
         hover:underline 
         dark:text-sky-600">
-          Terminos y condiciones
-        </a>
+           <ModalScreen />
+        </p>
       </label>
     </div>
     </>

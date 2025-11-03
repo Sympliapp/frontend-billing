@@ -10,7 +10,7 @@ export const ResetPassword = () => {
     </div>
 
     <div className="flex items-center justify-center px-1 py-10 mx-1 md:h-screen lg:py-0">
-      <div className="w-full md:mt-0 mt-[20vh] max-w-100 sm:p-3 border-l-3 ml-1 border-teal-400 rounded-sm shadow-xl/10 p-1">
+      <div className="w-full md:mt-0 mt-[20vh] max-w-100 sm:p-3 border-l-3 ml-1 border-teal-400 p-1">
           <h2 className="text-2xl 
           px-1 
           font-bold 
@@ -24,11 +24,11 @@ export const ResetPassword = () => {
 
           <FormResetPassword />
 
-          <div className='flex flex-row w-100 p-4'>
+          <div className='flex flex-wrap w-auto p-4'>
             <p className='text-sm'>Todos los campos 
               <span className='text-red-500'> (*) </span> 
               son requeridos para actualizar tú cuenta.
-              </p>
+            </p>
               
           </div>
 

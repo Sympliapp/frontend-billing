@@ -7,7 +7,7 @@ export const FormRecoverPass = () => {
     <>
       <div className="flex flex-col items-center justify-center px-1.5 py-10 mx-auto md:h-screen lg:py-0 ">
 
-      <div className="w-full p-5 md:mt-[-86px] mt-[13vh] max-w-100 sm:p-3 border-l-3 ml-1 border-teal-400 rounded-sm shadow-xl/10">
+      <div className="w-full p-5 md:mt-[-86px] mt-[13vh] max-w-100 sm:p-3 border-l-3 ml-1 border-teal-400">
           <h1 className="text-2xl px-1 font-bold leading-tight tracking-tight text-gray-900 md:text-xl dark:text-gray-700">
               Perdiste tú contraseña?
           </h1>

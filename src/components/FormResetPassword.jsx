@@ -6,7 +6,7 @@ export const FormResetPassword = () => {
     <form class="mt-4 p-1 space-y-4 lg:mt-5 md:space-y-3 space-y-6" action="#">
         <div>
             <label 
-            for="password" 
+            forHtml="password" 
             className="
             block 
             mb-1 
@@ -17,36 +17,37 @@ export const FormResetPassword = () => {
               Nueva contraseña <span className='text-red-500'>(*)</span>
             </label>
             <input
-              id="password" 
-              type="password" 
-              name="password" 
-              placeholder="********" 
-              className="custom_input input" 
-              required />
+            forHtml='password'
+            id="new-password" 
+            type="password" 
+            name="new-password" 
+            placeholder="********" 
+            className="custom_input input" 
+            required />
         </div>
 
         <div>
-            <label 
-              htmlFor="password" 
-              className="
-              block 
-              mb-1 
-              text-sm 
-              ml-4 
-              text-gray-600
-              ">
-              Confirmar contraseña <span className='text-red-500'>(*)</span>
-            </label>
+          <label 
+            htmlFor="password" 
+            className="
+            block 
+            mb-1 
+            text-sm 
+            ml-4 
+            text-gray-600
+            ">
+            Confirmar contraseña <span className='text-red-500'>(*)</span>
+          </label>
 
-            <input 
-              htmlFor='confirm-password'
-              type="password" 
-              name="confirm-password" 
-              id="confirm-password" 
-              placeholder="********" 
-              className="custom_input input" 
-              required
-             />
+          <input 
+            htmlFor='confirm-password'
+            type="password" 
+            name="confirm-password" 
+            id="confirm-password" 
+            placeholder="********" 
+            className="custom_input input" 
+            required
+            />
         </div>
 
       </form>

@@ -1,28 +1,28 @@
 import { useRef } from "react";
 import { IoCloseOutline } from "react-icons/io5";
-import { ContentModals } from "./ContentModals";
+import { ContentPrivacy } from "../ModalPrivacy/ContentPrivacy";
 
-export const ModalScreen = () => {
-  const modalTerms = useRef (null);
+export const ModalPrivacy = () => {
+  const modalPolicy = useRef (null);
 
   return (
     <>
         <button 
-        onClick={() => modalTerms.current.showModal()}
+        onClick={() => modalPolicy.current.showModal()}
         type="text"
         className="inline-block 
         text-sm font-medium 
         leading-normal 
-        text-sky-500
+        text-sky-100
         transition 
         duration-150 
         cursor-pointer">
-        Términos y Condiciones
+        Políticas de Privacidad
       </button>
  
     <div className="flex">
         <dialog 
-        className="m-auto p-4
+        className="m-auto p-1
         rounded-2xl
         bg-gray-200
         w-200
@@ -45,15 +45,15 @@ export const ModalScreen = () => {
         starting:open:scale-y-0
         starting:open:opacity-0
         "
-        ref={modalTerms}>
+        ref={modalPolicy}>
           <h1 className="text-sky-800 
             text-3xl md:text-3xl
             flex flex-wrap
-            text-wrap
+            text-wrap p-3
             justify-center
             font-medium  
             leading-normal">
-             📄 Términos y Condiciones de Uso
+             📄 Políticas de Privacidad
           </h1>
 
           <button 
@@ -74,7 +74,7 @@ export const ModalScreen = () => {
               cursor-pointer
               dark:hover:bg-sky-600 
               dark:hover:text-white"
-              onClick={() => modalTerms.current.close()}
+              onClick={() => modalPolicy.current.close()}
               >
               <svg className="flex ml-[-2px]" aria-hidden="true" fill="none" viewBox="0 0 14 14">
                   <IoCloseOutline 
@@ -92,7 +92,7 @@ export const ModalScreen = () => {
               text-sm
               scrollable
               dark:border-gray-300">
-               <ContentModals />
+               <ContentPrivacy />
             </div>
         
               <div className="flex flex-col md:flex-row
@@ -112,7 +112,7 @@ export const ModalScreen = () => {
                 hover:text-sky-50
                 w-full
                 cursor-pointer"
-                onClick={() => modalTerms.current.close()}
+                onClick={() => modalPolicy.current.close()}
                 >Aceptar
                 </button>
 
@@ -128,7 +128,7 @@ export const ModalScreen = () => {
                 justify-center
                 w-full
                 cursor-pointer"
-                onClick={() => modalTerms.current.close()}>
+                onClick={() => modalPolicy.current.close()}>
                     Cerrar
                 </button>
             </div>

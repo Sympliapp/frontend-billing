@@ -4,6 +4,7 @@ import { NavLogo } from '../components/NavBar/NavLogo'
 import {BtnContactanos} from '../components/BtnContactanos'
 import { NavLink } from 'react-router-dom'
 import { CheckBoxRemenber } from '../components/CheckBoxRemenber';
+import { FooterScreen } from '../components/Footer/FooterScreen';
 
 
 const LoginScreen = () => {
@@ -38,11 +39,11 @@ const LoginScreen = () => {
   return (
     <>
       <section className="flex flex-col items-center">
-        <div className='flex flex-col w-full bg-white h-22 shadow-md '>
+        <div className='flex flex-col w-full bg-white h-0 shadow-md '>
         <NavLogo />
 
         <div className='absolute my-6 ms-18'>
-          <h1 className='text-2xl sm:text-3xl font-semibold text-sky-950'>Symplia</h1>
+          <h1 className='text-2xl sm:text-2xl font-semibold text-sky-950'>Symplia</h1>
         </div>
 
         <div className='lg:visible xl:visible'>
@@ -50,11 +51,12 @@ const LoginScreen = () => {
         </div>
         </div>
 
-        <div className="flex max-w-100 mt-[14vh] border-l-3 ml-1.5 border-teal-400 rounded-sm shadow-xl/10 p-1">
+        <div className="flex max-w-100 mt-[15vh] xl:mt-[22vh] md:mt-[24vh]
+        border-l-3 ml-1.5 border-teal-400 p-1">
 
           <div className="flex p-2">
-            <form className="flex flex-col space-y-5 px-1" action="#" onSubmit={handleSubmit}>
-            <h2 className="text-3xl font-semibold text-sky-800">Iniciar Sesión</h2>
+            <form className="flex flex-col space-y-2.5 px-1" action="#" onSubmit={handleSubmit}>
+            <h2 className="text-xl text-sky-800">Sign In</h2>
             <p className='flex text-justify text-sm text-grey-600'>Symplia Facturación nace con el proposito de hacer tu trabajo más
               simple, sencillo y organizado.
             </p>
@@ -130,9 +132,15 @@ const LoginScreen = () => {
         </form>
       </div>
     </div>
+
   </section>
-    </>
-  );
+
+    <div className='flex flex-row'>
+        <FooterScreen />
+    </div>
+
+</>
+);
 };
 
 export default LoginScreen
